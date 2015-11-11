@@ -1,6 +1,7 @@
 from selenium import webdriver
 from bs4 import BeautifulSoup
 import time
+import urllib
 import urllib2
 import wget
 new_links=[]
@@ -35,19 +36,19 @@ final_stuff=[]
 def makeup(x,y):
 
     pos=x.find(".php")
-    x=x[:pos]
+    x=x[:pos-3]
     i=9
-
+    stream="it"
     while(i<14):
         if i==9:
-            string1="http://xampaperz.com/papers/img/btech/cse/sem" + str(y[25]) + "/200"+str(i)+x+".jpg/"
+            string1="http://xampaperz.com/papers/img/btech/"+ stream + "/sem" + str(y[25]) + "/200"+str(i)+x+".jpg/"
 
-            string2="http://xampaperz.com/papers/img/btech/cse/sem" + str(y[25]) + "/200"+str(i)+x+"2.jpg/"
+            string2="http://xampaperz.com/papers/img/btech/"+ stream + "/sem" + str(y[25]) + "/200"+str(i)+x+"2.jpg/"
 
         else:
-            string1="http://xampaperz.com/papers/img/btech/cse/sem" + str(y[25]) + "/20"+str(i)+x+".jpg/"
+            string1="http://xampaperz.com/papers/img/btech/"+ stream + "/sem" + str(y[25]) + "/20"+str(i)+x+".jpg/"
 
-            string2="http://xampaperz.com/papers/img/btech/cse/sem" + str(y[25]) + "/20"+str(i)+x+"2.jpg/"
+            string2="http://xampaperz.com/papers/img/btech/"+ stream + "/sem" + str(y[25]) + "/20"+str(i)+x+"2.jpg/"
         final_stuff.append(string1)
         final_stuff.append(string2)
         i=i+1
@@ -122,8 +123,8 @@ for x in new_links:
     for y in qplinks:
         y= makeup(y,x)
 
-browser.close()
+
 g=open("finalstuff.txt","w")
 for x in final_stuff:
-    urllib.urlretrieve(x, filename=save_as)
+    filename=wget.download(x)
     g.write(x+"\n")
