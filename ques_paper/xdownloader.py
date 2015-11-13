@@ -154,7 +154,7 @@ for x in cool:
 
 for x in cooler:
 
-    browser= webdriver.Firefox()
+    
 
     browser.get(x)
     time.sleep(1)
