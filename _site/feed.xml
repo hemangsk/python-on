@@ -5,13 +5,15 @@
     <description>storehouse of my python projects</description>
     <link>http://hemangsk.github.io/python-on/</link>
     <atom:link href="http://hemangsk.github.io/python-on/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 29 Jun 2016 12:32:44 +0000</pubDate>
-    <lastBuildDate>Wed, 29 Jun 2016 12:32:44 +0000</lastBuildDate>
+    <pubDate>Wed, 29 Jun 2016 12:45:28 +0000</pubDate>
+    <lastBuildDate>Wed, 29 Jun 2016 12:45:28 +0000</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
     
       <item>
         <title>Visualizations</title>
-        <description>&lt;iframe width=&quot;800&quot; height=&quot;500&quot; frameborder=&quot;0&quot; src=&quot;http://pythontutor.com/iframe-embed.html#code=def+fact(n%29%3A%0A++++if(n%3C%3D1%29%3A%0A++++++++return+1%0A++++else%3A%0A++++++++return+n+*+fact(n-1%29%0A%0Aprint(fact(5%29%29&amp;amp;origin=opt-frontend.js&amp;amp;cumulative=false&amp;amp;heapPrimitives=false&amp;amp;textReferences=false&amp;amp;py=2&amp;amp;rawInputLstJSON=%5B%5D&amp;amp;curInstr=22&amp;amp;codeDivWidth=350&amp;amp;codeDivHeight=400&quot;&gt; &lt;/iframe&gt;
+        <description>&lt;p&gt;Factorial of a number.&lt;/p&gt;
+
+&lt;iframe width=&quot;800&quot; height=&quot;500&quot; frameborder=&quot;0&quot; src=&quot;http://pythontutor.com/iframe-embed.html#code=def+fact(n%29%3A%0A++++if(n%3C%3D1%29%3A%0A++++++++return+1%0A++++else%3A%0A++++++++return+n+*+fact(n-1%29%0A%0Aprint(fact(5%29%29&amp;amp;origin=opt-frontend.js&amp;amp;cumulative=false&amp;amp;heapPrimitives=false&amp;amp;textReferences=false&amp;amp;py=2&amp;amp;rawInputLstJSON=%5B%5D&amp;amp;curInstr=22&amp;amp;codeDivWidth=350&amp;amp;codeDivHeight=400&quot;&gt; &lt;/iframe&gt;
 </description>
         <pubDate>Wed, 29 Jun 2016 02:19:40 +0000</pubDate>
         <link>http://hemangsk.github.io/python-on/recursion/welcome-to-jekyll</link>
