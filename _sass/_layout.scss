@@ -1,0 +1,181 @@
+.nav a {
+	text-decoration: none;
+}
+
+.feed-icon {
+	color: $main-color;
+	font-size: 18px;
+}
+
+.fa-heart {
+	color: $main-color;
+}
+
+.article-title a {
+	text-decoration: none;
+	color: $black;
+	@include transition(.3s);
+	&:hover {
+		color: $main-color;
+	}
+}
+
+.post-title {
+	color: $black;
+}
+
+.home-intro {
+    text-transform: capitalize;
+	color: $black;
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+.page-content {
+	margin-top: 50px;
+}
+
+.avatar {
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+}
+
+.avatar-container {
+	width: 16.66667%;
+	margin-left: 8.33333%;
+}
+
+.justify {
+	text-align: justify;
+}
+
+.center {
+	float: none;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.summary {
+	margin: 3em 0;
+}
+
+.footer-container {
+	border-top: 1px solid darken($nav-border, 10%);
+	margin-top: 100px;
+}
+
+.footer {
+	margin: 10px;
+	text-align: center;
+	/*float: right;*/
+	color: $black;
+	font-size: 14px;
+}
+
+code {
+	color: $main-color;
+}
+
+/*.footer-fixed {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	 Set the fixed height of the footer here 
+	height: 40px;
+}*/
+
+/*.footer-logo {
+	width: auto;
+	margin: 40px 0 20px 40px;
+}*/
+
+.logo {
+	margin-top: 12px;
+}
+
+@media screen and (max-width: 765px) {
+	.navbar-default {
+		background-color: transparent;
+		border: transparent;
+		.navbar-collapse {
+			background-color: #fff;
+		}
+	}
+
+	.navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+	.small-hidden {
+		display: none;
+	}
+
+	.container {
+		width: 90%;
+	}
+
+}
+
+@media screen and (min-width: 768px) {
+	.navbar {
+		max-height: 50px;
+	    border-bottom: 1px solid $nav-border;
+	    border-radius: 0;
+		margin-bottom: 50px;
+		background-color: white;
+		border-color: $nav-border;
+	}
+
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+
+	.navbar ul li  {
+	    border-bottom: 2px solid transparent;
+	    color: $nav-buttons-color;
+	    display: inline-block;
+	    font-size: 14px;
+	    text-decoration: none;
+	    text-transform: uppercase;
+	    margin: 0 8px;
+	    padding: 0;
+	    letter-spacing: 1px;
+    }
+
+	.navbar ul li a {
+		border-top: 2px solid transparent;
+		max-height: 50px;
+	}
+
+	.navbar-default .navbar-nav>li>a:hover {
+	    color: $main-color;
+	    background-color: transparent;
+	}
+
+    .navbar .active  {
+		background-color: transparent;
+		border-bottom: 2px solid $main-color;
+    }
+
+	.page-content {
+		margin-top: 120px;
+	}
+
+	.container {
+		width: 100%;
+	    max-width: 1024px;
+	}
+}
+

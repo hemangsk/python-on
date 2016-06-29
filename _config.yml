@@ -1,0 +1,20 @@
+# Site settings
+title: Python On
+email: hemangsk@gmail.com
+description: storehouse of my python projects
+baseurl: "/python-on" # the subpath of your site, e.g. /blog
+url: "http://hemangsk.github.io" # the base hostname & protocol for your site
+twitter_username: hemang_kumar
+github_username:  hemangsk
+
+author:
+  name: Hemang Kumar
+  email: hemangsk@gmail.com
+  url: http://hemangkumar.xyz
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+permalink: /:categories/:title
+timezone: Asia/India

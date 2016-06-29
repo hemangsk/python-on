@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<div class="home">
+    <div class="container">
+        <div class="row">
+            <div class="col-md">
+                <div class="home-intro">
+                    <h1>{{ page.cat }}</h1>
+                    <h2>{{page.tagline}}</h2>
+                </div>
+            </div>
+        </div>
+{% for post in site.categories.[page.cat] %}
+        <article class="summary">
+            <div class="row">
+                <div class="col-sm-4 avatar-container small-hidden">
+                    <a href="#"><img class="avatar" src="{{ site.baseurl }}/img/{% if post.img %}{{ post.img }}{% else %}empty.jpg{% endif %}"></a>
+                </div>
+                <div class="col-sm-7 article-container">
+                    <h3 class="article-title"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+                    <div>
+                        <p class="justify">{{ post.excerpt }}&nbsp; <a href="{{ post.url | prepend: site.baseurl }}">Read more</a></p>
+                    </div>
+                </div>
+            </div>
+        </article>
+{% endfor %}
+    </div>
+</div>
