@@ -49,4 +49,4 @@ def evaluator(string):
 
     return operand_stack.pop()
 
-print(evaluator("(2+3)"))
+print(evaluator("(2+(4*9))"))
