@@ -29,4 +29,4 @@ def baseConvert(num, base):
 
     return result
 
-print(baseConvert(25,2))
+print(baseConvert(2,2))
