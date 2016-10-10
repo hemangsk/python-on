@@ -17,15 +17,15 @@ class Node:
         self.next = newNext
 
 
-a = Node(3)
-b = Node(5)
-a.setNext(b)
+#a = Node(3)
+#b = Node(5)
+#a.setNext(b)
 
-print(a.data)
-print(a.next)
-print(a.next.getData())
-print(a.getData())
-print(a.getNext().getData())
+#print(a.data)
+#print(a.next)
+#print(a.next.getData())
+#print(a.getData())
+#print(a.getNext().getData())
 
 class UnorderedList:
     """ This is an Unordered List Class! """
@@ -140,3 +140,14 @@ class UnorderedList:
             count+=1
             previous = current
             current = current.getNext()
+
+    def __str__(self):
+        current = self.head
+        result = ""
+
+        while(current != None):
+                result += str(current.getData()) +", "
+                current = current.getNext()
+
+        result = result[:-2]
+        return result

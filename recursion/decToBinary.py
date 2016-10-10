@@ -3,7 +3,7 @@ def decToBinary(n):
 		return "1"
 	elif(n==0):
 		return "0"
-	else:	
+	else:
 		return decToBinary(int(n/2)) + str(n%2)
 
 
